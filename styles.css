@@ -1,0 +1,145 @@
+body{
+    background-color: white;
+}
+
+
+
+.master{
+    display: inline-block;
+    width: 700px;
+    height: 900px;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+#controller{
+    display: inline-block;
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    box-shadow: black -10px 10px 0px;
+    border: solid black;
+    font-size: 15pt;
+    border: double black;
+}
+
+#blue:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+/* BOX and CHECK*/
+
+.box{
+    box-shadow: black -10px 10px 0px;
+    border: solid black;
+    display: inline-block;
+    padding: 40px;
+    width: 65%;
+    margin: 30px;
+}
+
+
+.check{
+    display: inline-block;
+}
+
+/* ========================== */
+
+input[type=checkbox]{
+    transform: scale(3);
+    color: black;
+    margin: auto
+}
+
+
+.todotext{
+    text-align: center;
+    font-size: 18pt;
+    margin: auto;
+}
+
+
+/* popup box reacting to the press of the add button. */
+
+
+#popup{
+    background-color: rgb(0, 0, 43);
+    border: solid black;
+    position: relative;
+    bottom: 600px;
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    display: none;
+}
+#popup button{
+    font-size: 30pt;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+#popup button:hover{
+    color: blue;
+}
+
+#popup textarea {
+    width: 496px;
+    height: 100px;
+    resize: none;
+    font-size: 20pt;
+}
+
+#exit{
+    font-size: 15pt;
+    color: red;
+    position: absolute;
+    top: -22px;
+    right: 0px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1090px){
+    .master{
+        margin: auto;
+    }
+    #controller{
+        display: inline-block;
+        position: static;
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        box-shadow: black -10px 10px 0px;
+        border: solid black;
+        font-size: 15pt;
+        border: double black;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .master{
+        margin: auto;
+    }
+    .box{
+        width: 50%;
+    }
+    #controller{
+        display: inline-block;
+        position: relative;
+        left: 170px;
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+        box-shadow: black -10px 10px 0px;
+        border: solid black;
+        font-size: 15pt;
+        border: double black;
+    }
+  }
